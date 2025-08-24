@@ -3,82 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pâtisserie Douceur</title>
+    <title>HP作成代行サービス</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- ヘッダー -->
     <header>
         <div class="container">
-            <h1>Pâtisserie Douceur</h1>
+            <h1>シンプルHP作成代行</h1>
             <nav>
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services">サービス</a></li>
+                    <li><a href="#portfolio">制作実績</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- ヒーローセクション -->
         <section id="hero">
             <div class="container">
-                <h2>心ときめく、魔法のスイーツ</h2>
-                <p>一口食べれば、幸せ広がる。特別な日のための、最高級のケーキをお届けします。</p>
-                <a href="#menu" class="btn">メニューを見る</a>
+                <h2>自分の事業を一目で伝えるシンプルだけど見やすい<br>HPを制作します。</h2>
+                <p>自営業やフリーランスの方で自分のHPを持ちたい。でも頼むと高いしそこまではお金をかける余裕はない・・・そんな悩みを解決いたします。</p>
+                <a href="#contact" class="btn">無料で相談する</a>
             </div>
         </section>
 
-        <section id="menu">
+        <!-- サービス内容セクション -->
+        <section id="services">
             <div class="container">
-                <h2>Our Menu</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/menu_item1.jpg.png" alt="ストロベリーショートケーキ">
-                        <div class="menu-item-content">
-                            <h3>ストロベリーショートケーキ</h3>
-                            <p>新鮮な苺を贅沢に使用した、王道のショートケーキです。</p>
+                <h2>サービス内容</h2>
+                <div class="service-items">
+                    <div class="service-item">
+                        <h3>名刺代わりになるシンプルHP作成</h3>
+                                                <div class="service-description">
+                            <p>個人事業主様や小規模店舗様向けに事業の顔となるスマホ表示にも対応したシンプルなホームページを制作します。</p>
+                            <p>通常なら数万円はかかるHP作成をAIを使う事で技術料等のコストを無くし数千円からご提供する事で発注者様が気軽に試せる様にしています。</p>
+                            <p>そして作ったHPデータをお客様にお渡しし、そのHPをレンタルサーバー等でお客様ご本人で公開していただく事で通常のHP作成業者に頼むと安くても月々5,000円～の固定費を数百円～1,000円前後で自分のHPをご利用になる事が出来ます。</p>
                         </div>
+                        <p class="price">料金目安: 5,000円～</p>
                     </div>
-                    <div class="menu-item">
-                        <img src="images/menu_item2.png.png" alt="濃厚ガトーショコラ">
-                        <div class="menu-item-content">
-                            <h3>濃厚ガトーショコラ</h3>
-                            <p>ベルギー産チョコレートを100%使用した、リッチな味わい。</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="images/menu_item3.png.png" alt="季節のフルーツタルト">
-                        <div class="menu-item-content">
-                            <h3>季節のフルーツタルト</h3>
-                            <p>旬のフルーツをふんだんに使った、彩り豊かなタルトです。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 制作実績セクション -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>制作実績</h2>
+                <div class="portfolio-items">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-01.png.png" alt="制作実績のサンプル画像">
+                        <div class="portfolio-info">
+                            <h3>サンプルサイト</h3>
+                            <p>企業向けの汎用的なテンプレートデザインです。お知らせ機能やサービス紹介など、基本的な機能を網羅しています。</p>
+                            <a href="https://yoshimaru-kun.github.io/HP_Template/" class="btn" target="_blank" rel="noopener noreferrer">サイトを見る</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
+        <!-- お客様の声セクション -->
+        <section id="testimonials">
             <div class="container">
-                <h2>About Us</h2>
-                <p>Pâtisserie Douceurは、フランス語で「優しさ」を意味します。私たちは、素材の持つ本来の美味しさを最大限に引き出し、一つ一つ丁寧に、心を込めてケーキをお作りしています。お客様の日常に、ささやかな幸せと優しさをお届けするのが私たちの願いです。</p>
+                <h2>お客様の声</h2>
+                <!-- お客様の声の詳細は後で追加 -->
             </div>
         </section>
 
+        <!-- お問い合わせフォームセクション -->
         <section id="contact">
             <div class="container">
-                <h2>Contact Us</h2>
-                <p>ご予約や特別なご注文は、お電話にて承っております。</p>
-                <p><strong>電話番号:</strong> 03-1234-5678</p>
+                <h2>お問い合わせ</h2>
+                <!-- お問い合わせフォームは後で追加 -->
             </div>
         </section>
     </main>
 
+    <!-- フッター -->
     <footer>
-        <p>&copy; 2025 Pâtisserie Douceur. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 HP作成代行サービス</p>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
