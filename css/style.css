@@ -203,8 +203,8 @@ main {
 
 /* Hero Section */
 #hero {
-    background: #ffffff;
-    color: #212121;
+    background: linear-gradient(45deg, #1a237e, #283593);
+    color: #ffffff;
     padding: 8rem 0;
     text-align: center;
 }
@@ -215,21 +215,16 @@ main {
     margin-bottom: 1.5rem;
     line-height: 1.4;
     letter-spacing: 1px;
-    color: #1a237e;
+    color: #ffffff;
 }
 
 #hero p {
-    font-size: 1.2rem; /* 少し大きくして縁取りの視認性を確保 */
+    font-size: 1.2rem;
     margin-bottom: 2.5rem;
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    color: #fff; /* 文字本体の色を白に */
-    text-shadow: 
-        -1px -1px 0 #000, 
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000; /* 4方向に黒い影を配置して縁取り */
+    color: #ffffff;
 }
 
 .btn {
@@ -249,6 +244,18 @@ main {
     color: #ffffff;
     border-color: #c5b358;
     text-decoration: none;
+}
+
+#hero .btn {
+    background: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
+
+#hero .btn:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
 }
 
 /* Sections */
@@ -326,6 +333,7 @@ section h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    align-items: stretch; /* To make all items in a row equal height */
 }
 
 .portfolio-item {
@@ -337,6 +345,8 @@ section h2 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden; /* 角丸を画像に適用するため */
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-item:hover {
@@ -346,12 +356,17 @@ section h2 {
 
 .portfolio-item img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     display: block;
 }
 
 .portfolio-info {
     padding: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .portfolio-info h3 {
@@ -368,6 +383,7 @@ section h2 {
 .portfolio-info .btn {
     font-size: 0.9rem;
     padding: 0.7rem 1.8rem;
+    margin-top: auto;
 }
 
 
