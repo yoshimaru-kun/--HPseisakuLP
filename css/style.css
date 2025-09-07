@@ -203,7 +203,7 @@ main {
 
 /* Hero Section */
 #hero {
-    background-image: url('../images/副業LPヒーローセクションの画像01.jpg');
+    background-image: url('../images/29542950_m.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -269,8 +269,8 @@ main {
 #hero .btn {
     background: transparent;
     color: #ffffff;
-    border-color: #ffffff;
-    margin-top: 14rem;
+    border-color: #000000;
+    margin-top: 0;
 }
 
 #hero .btn:hover {
@@ -435,10 +435,16 @@ footer {
     }
 
     #hero {
-        padding: 6rem 0;
+        padding: 3rem 0 0;
+        background-position: 45% 10%;
+        background-size: 190%;
     }
 
     #hero h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+
+    #hero p {
+        margin-bottom: 1rem;
     }
 }
