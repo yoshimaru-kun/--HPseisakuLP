@@ -448,3 +448,7 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
+#contact .container {
+    text-align: center;
+}
