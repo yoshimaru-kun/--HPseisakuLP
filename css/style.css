@@ -208,7 +208,7 @@ main {
     background-position: center center;
     background-size: cover;
     color: #ffffff;
-    padding: 4rem 0 2rem;
+    padding: 4rem 0 8rem;
     text-align: center;
     position: relative;
 }
@@ -245,13 +245,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
-}
-
-/* Hero CTA Section */
-.hero-cta {
-    background: #ffffff;
-    text-align: center;
-    padding: 2rem 0 4rem;
 }
 
 .btn {
@@ -442,7 +435,7 @@ footer {
     }
 
     #hero {
-        padding: 3rem 0 2rem;
+        padding: 3rem 0 4rem;
         background-position: 45% 10%;
         background-size: 190%;
     }
