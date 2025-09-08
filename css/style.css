@@ -130,6 +130,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+    background-color: #fff;
+}
+
 /* Basic Styles */
 body {
     font-family: 'Noto Sans JP', sans-serif;
