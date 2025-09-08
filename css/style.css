@@ -458,3 +458,26 @@ footer {
 #contact .container {
     text-align: center;
 }
+
+/* Notes Section */
+.notes-list {
+    text-align: left;
+    list-style-type: none; /* デフォルトの黒丸を消す */
+    padding-left: 0;
+}
+
+.notes-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.notes-list li::before {
+    content: '・';
+    position: absolute;
+    left: 0;
+}
+
+.notes-list li:last-child {
+    margin-bottom: 0;
+}
