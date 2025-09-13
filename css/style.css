@@ -462,20 +462,20 @@ footer {
 /* Notes Section */
 .notes-list {
     text-align: left;
-    list-style-type: none; /* デフォルトの黒丸を消す */
-    padding-left: 0;
+    list-style-position: outside;
+    padding-left: 1.5em; /* Adjust padding for list numbers */
 }
 
 .notes-list li {
-    margin-bottom: 1rem;
-    padding-left: 1.2em;
-    position: relative;
+    margin-bottom: 1.5rem; /* Add more space between items */
+    font-size: 1rem; /* Reset font size to normal */
+    line-height: 1.7; /* Adjust line height for readability */
+    font-weight: 400; /* Reset font weight to normal */
 }
 
-.notes-list li::before {
-    content: '・';
-    position: absolute;
-    left: 0;
+.notes-list li strong {
+    font-size: 1.2rem; /* Increase font size for the title */
+    font-weight: 700; /* Make the title bold */
 }
 
 .notes-list li:last-child {
