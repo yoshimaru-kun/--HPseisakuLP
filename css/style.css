@@ -207,14 +207,38 @@ main {
 
 /* Hero Section */
 #hero {
-    background-image: url('../images/29542950_m.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     color: #ffffff;
     padding: 4rem 0 8rem;
     text-align: center;
     position: relative;
+    overflow: hidden; /* スライドがはみ出さないように */
+}
+
+.hero-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* テキストより後ろに */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* フェード効果 */
+    z-index: 1;
+}
+
+.slide.is-active {
+    opacity: 1;
+    z-index: 2;
 }
 
 #hero::before {
