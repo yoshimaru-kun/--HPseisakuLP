@@ -483,6 +483,30 @@ footer {
     text-align: center;
 }
 
+/* Contact Section buttons spacing */
+#contact a.btn {
+    margin-right: 0.75rem; /* space between buttons on wide screens */
+    margin-top: 0.75rem;   /* add vertical breathing room */
+}
+
+#contact a.btn:last-of-type {
+    margin-right: 0; /* no extra gap at the end */
+}
+
+/* Stack buttons neatly on small screens */
+@media (max-width: 480px) {
+    #contact a.btn {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 0.5rem auto 0; /* centered with vertical spacing */
+    }
+
+    #contact a.btn + a.btn {
+        margin-top: 0.75rem; /* extra gap between stacked buttons */
+    }
+}
+
 /* Notes Section */
 .notes-list {
     text-align: left;
